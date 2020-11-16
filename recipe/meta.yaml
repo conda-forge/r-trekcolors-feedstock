@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/trekcolors_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/trekcolors/trekcolors_{{ version }}.tar.gz
-  sha256: 70e6ef88e1dc444ed5e6012d68b5d4b63157b720960da693dfe9f839e7e382bb
+  sha256: 587425d80e8a67325fe472e3e60183e5920e2433296ac009895b3a75c413ca67
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,13 +38,10 @@ test:
 about:
   home: https://github.com/leonawicz/trekcolors
   license: MIT
-  summary: Provides a dataset of predefined color palettes based on the Star Trek science fiction
-    series, associated color palette functions, and additional functions for generating
-    customized palettes that are on theme. The package also offers functions for applying
-    the palettes to plots made using the 'ggplot2' package.
+  summary: Provides a dataset of predefined color palettes based on the Star Trek science fiction series, associated color palette functions, and additional functions for generating customized palettes that are on theme. The package also offers functions for applying the palettes to plots made using the 'ggplot2' package.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
