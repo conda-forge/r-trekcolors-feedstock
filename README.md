@@ -5,11 +5,9 @@ Home: https://github.com/leonawicz/trekcolors
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trekcolors-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides a dataset of predefined color palettes based on the Star Trek science fiction series, associated color palette functions, and additional functions for generating customized palettes that are on theme. The package also offers functions for applying the palettes to plots made using the 'ggplot2' package.
-
-
 
 Current build status
 ====================
